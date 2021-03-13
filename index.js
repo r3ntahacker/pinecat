@@ -25,6 +25,6 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === 'im hungry') {
-    msg.channel.send('hi hungry');
+    msg.channel.send('hi hungry im pinecat');
   }
 });
