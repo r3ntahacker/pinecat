@@ -20,7 +20,7 @@ client.on('message', message => {
       return message.channel.send(`Your avatar: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
     }
   } else if (message.content === 'im') { 
-    message.channel.send(Hi ${args} im pinecat');
+    message.channel.send('Hi ${args} im pinecat');
   }
 });
 client.on('message', msg => {
