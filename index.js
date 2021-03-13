@@ -10,7 +10,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/);
-  const command = args.shift().toLowerCase();
+  const command = args.shift[0]().toLowerCase();
 	if (message.content === '!ping') {
 		message.channel.send('Pong.');
 	} else if (message.content === `${prefix}user-info`) {
