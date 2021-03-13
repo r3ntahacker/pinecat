@@ -19,7 +19,12 @@ client.on('message', message => {
     if (!message.mentions.users.size) {
       return message.channel.send(`Your avatar: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
     }
-  } else if (command === 'im') { 
-    message.channel.send('Hi ${args} im pinecat');
+  } else if (message.content === 'im') { 
+    message.channel.send(Hi ${args} im pinecat');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'im hungry') {
+    msg.channel.send('hi hungry');
   }
 });
